@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/shop.css" />
+    <!-- bootstrap5 css cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- font awosome kit -->
+    <script
+      src="https://kit.fontawesome.com/0ffd30f08f.js"
+      crossorigin="anonymous"
+    ></script>
+     <!-- Link Swiper's CSS -->
+     <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+   />
+
+
+    <!-- javascript link -->
+    <script src="./js/index.js"></script>
+    <title>Shop</title>
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+          <a class="navbar-brand nav-logo" href="#"
+            ><img src="./img/Hyperazzi.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler nav-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">Faq</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <div class="icon-box">
+              <i
+                onclick="window.location ='light.html'"
+                class="fa-solid fa-lightbulb"
+              ></i>
+              <i class="fa-regular fa-user d-block"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- shop start -->
+      <section class="shop">
+        <div class="container">
+          <div class="row">
+            <!-- shop category -->
+            <div class="col-lg-3">
+              <!-- CATEGORIES selection box -->
+              <div id="filter">
+                <i class="fa-solid fa-filter d-inline"></i>
+              <p onclick="filter()" > Filter</p>
+              </div>
+              <div id="product-box" class="category-select-box">
+                <div class="d-flex justify-content-between">
+                    <h3 class="category-title">CATEGORIES</h3>
+                    <i onclick="xMark()" id="xmark" class="fa-solid fa-xmark"></i>
+                </div>
+                <ul>
+                  <li>
+                    <div class="select-box">
+                      <input type="checkbox" name="" id="T-Shirt" />
+                      <label for="T-Shirt">T-Shirt</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-box">
+                      <input type="checkbox" name="" id="T-Shirt1" />
+                      <label for="T-Shirt1">T-Shirt</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-box">
+                      <input type="checkbox" name="" id="T-Shirt2" />
+                      <label for="T-Shirt2">T-Shirt</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-box">
+                      <input type="checkbox" name="" id="T-Shirt3" />
+                      <label for="T-Shirt3">T-Shirt</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-box">
+                      <input type="checkbox" name="" id="T-Shirt4" />
+                      <label for="T-Shirt4">T-Shirt</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-box">
+                      <input type="checkbox" name="" id="T-Shirt5" />
+                      <label for="T-Shirt5">T-Shirt</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-box">
+                      <input type="checkbox" name="" id="T-Shirt6" />
+                      <label for="T-Shirt6">T-Shirt</label>
+                    </div>
+                  </li>
+                </ul>
+
+                <h3 class="category-title">BRANDS</h3>
+
+                <ul>
+                  <li>
+                    <div class="select-box">
+                      <input type="checkbox" name="" id="T-Shirt7" />
+                      <label for="T-Shirt7">T-Shirt</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-box">
+                      <input type="checkbox" name="" id="T-Shirt8" />
+                      <label for="T-Shirt8">T-Shirt</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-box">
+                      <input type="checkbox" name="" id="T-Shirt9" />
+                      <label for="T-Shirt9">T-Shirt</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-box">
+                      <input type="checkbox" name="" id="T-Shirt11" />
+                      <label for="T-Shirt11">T-Shirt</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-box">
+                      <input type="checkbox" name="" id="T-Shirt22" />
+                      <label for="T-Shirt22">T-Shirt</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-box">
+                      <input type="checkbox" name="" id="T-Shirt33" />
+                      <label for="T-Shirt33">T-Shirt</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-box">
+                      <input type="checkbox" name="" id="T-Shirt44" />
+                      <label for="T-Shirt44">T-Shirt</label>
+                    </div>
+                  </li>
+                </ul>
+                <h3 class="category-title">AVAILABILITY</h3>
+
+                <ul>
+                  <li>
+                    <div class="select-box">
+                      <input type="checkbox" name="" id="T-Shirt77" />
+                      <label for="T-Shirt77">On Stock</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-box">
+                      <input type="checkbox" name="" id="T-Shirt88" />
+                      <label for="T-Shirt88">Out of Stock</label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- product list -->
+            <div class="col-lg-9">
+              <div class="product-list">
+                <p class="result-count">
+                  Showing <span>8</span> of <span>15</span> Products
+                </p>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div
+                      data-tilt
+                      data-tilt-startX="20"
+                      data-tilt-startY="-20"
+                      data-tilt
+                      data-tilt-startX="20"
+                      data-tilt-startY="-20"
+                      class="card mb-5"
+                    >
+                      <div class="card-top-img">
+                        <img src="./img/1.jpg" alt="" />
+                        <div class="card-icon">
+                          <i class="fa-solid fa-heart d-block"></i>
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                      </div>
+                      <div class="card-body1">
+                        <p class="type">shirts</p>
+                        <h3 class="product-name">Coats & Jackets</h3>
+                        <p class="price">$150</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div
+                      data-tilt
+                      data-tilt-startX="20"
+                      data-tilt-startY="-20"
+                      class="card mb-5"
+                    >
+                      <div class="card-top-img">
+                        <img src="./img/202462803-1-black.png" alt="" />
+                        <div class="card-icon">
+                          <i class="fa-solid fa-heart d-block"></i>
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                      </div>
+                      <div class="card-body1">
+                        <p class="type">men's</p>
+                        <h3 class="product-name">Hoodies</h3>
+                        <p class="price">$150</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div
+                      data-tilt
+                      data-tilt-startX="20"
+                      data-tilt-startY="-20"
+                      class="card mb-5"
+                    >
+                      <div class="card-top-img">
+                        <img src="./img/202285673-1-grey.png" alt="" />
+                        <div class="card-icon">
+                          <i class="fa-solid fa-heart d-block"></i>
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                      </div>
+                      <div class="card-body1">
+                        <p class="type">men's</p>
+                        <h3 class="product-name">Coats</h3>
+                        <p class="price">$150</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3">
+                    <div
+                      data-tilt
+                      data-tilt-startX="20"
+                      data-tilt-startY="-20"
+                      class="card mb-5"
+                    >
+                      <div class="card-top-img">
+                        <img src="./img/202559993-1-purple.png" alt="" />
+                        <div class="card-icon">
+                          <i class="fa-solid fa-heart d-block"></i>
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                      </div>
+                      <div class="card-body1">
+                        <p class="type">men's</p>
+                        <h3 class="product-name">Jeans</h3>
+                        <p class="price">$150</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div
+                      data-tilt
+                      data-tilt-startX="20"
+                      data-tilt-startY="-20"
+                      class="card mb-5"
+                    >
+                      <div class="card-top-img">
+                        <img src="./img/202285673-1-grey.png" alt="" />
+                        <div class="card-icon">
+                          <i class="fa-solid fa-heart d-block"></i>
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                      </div>
+                      <div class="card-body1">
+                        <p class="type">men's</p>
+                        <h3 class="product-name">Coats</h3>
+                        <p class="price">$150</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3">
+                    <div
+                      data-tilt
+                      data-tilt-startX="20"
+                      data-tilt-startY="-20"
+                      class="card mb-5"
+                    >
+                      <div class="card-top-img">
+                        <img src="./img/202462803-1-black.png" alt="" />
+                        <div class="card-icon">
+                          <i class="fa-solid fa-heart d-block"></i>
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                      </div>
+                      <div class="card-body1">
+                        <p class="type">men's</p>
+                        <h3 class="product-name">Hoodies</h3>
+                        <p class="price">$150</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div
+                      data-tilt
+                      data-tilt-startX="20"
+                      data-tilt-startY="-20"
+                      class="card mb-5"
+                    >
+                      <div class="card-top-img">
+                        <img src="./img/202559993-1-purple.png" alt="" />
+                        <div class="card-icon">
+                          <i class="fa-solid fa-heart d-block"></i>
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                      </div>
+                      <div class="card-body1">
+                        <p class="type">men's</p>
+                        <h3 class="product-name">Jeans</h3>
+                        <p class="price">$150</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div
+                      data-tilt
+                      data-tilt-startX="20"
+                      data-tilt-startY="-20"
+                      class="card mb-5"
+                    >
+                      <div class="card-top-img">
+                        <img src="./img/1.jpg" alt="" />
+                        <div class="card-icon">
+                          <i class="fa-solid fa-heart d-block"></i>
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                      </div>
+                      <div class="card-body1">
+                        <p class="type">shirts</p>
+                        <h3 class="product-name">Coats & Jackets</h3>
+                        <p class="price">$150</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- shipping section  -->
+      <section class="shipping-section">
+        <div class="container-fluid">
+          <hr />
+          <div class="row">
+            <div class="col-lg-4 py-5 text-center border-end">
+              <div class="shipping-box">
+                <i class="fa-regular fa-truck"></i>
+                <div class="shipping-text">
+                  <h3>FREE SHIPPING</h3>
+                  <p>From all orders over $200</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 py-5 border-end">
+              <div class="shipping-box">
+                <i class="fa-solid fa-headphones"></i>
+                <div class="shipping-text">
+                  <h3>24/7 SUPPORT</h3>
+                  <p>Get help when you need it</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 py-5">
+              <div class="shipping-box">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div class="shipping-text">
+                  <h3>SECURE SHOPPING</h3>
+                  <p>You're in safe hands</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+        </div>
+      </section>
+      <!-- instagram section -->
+      <section class="insta-section">
+        <div class="container-fluid">
+          <div class="title-box text-center">
+            <h2 class="unique-heading">AVONE ON INSTAGRAM</h2>
+            <span class="title-divider1"
+              ><span class="squre"></span><span class="squre"></span
+            ></span>
+            <p>
+              Elegance isn't solely defined by what you wear. It's how you carry
+              yourself, <br />
+              how you speak, what you read.
+            </p>
+          </div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="intagram-card swiper-slide">
+                <div class="img-box">
+                  <a href="" class="bg-size">
+                    <img
+                      class="img-fluid bg-img"
+                      src="./img/10.jpg"
+                      alt="instagram"
+                    />
+                  </a>
+                  <div class="on-hover">
+                    <div class="content-box">
+                      <span class="share">
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-plus"
+                          >
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line></svg
+                        ></span>
+                        SHARE
+                      </span>
+
+                      <div class="option-box">
+                        <p>New Offer- 45% Discount</p>
+                        <h5>Moonlight Bay Knit</h5>
+                        <span class="price">$120</span>
+
+                        <div class="control">
+                          <a href="wishlist.html">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-heart"
+                            >
+                              <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                              ></path>
+                            </svg>
+                          </a>
+                          <a href="cart.html">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-shopping-bag"
+                            >
+                              <path
+                                d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                              ></path>
+                              <line x1="3" y1="6" x2="21" y2="6"></line>
+                              <path d="M16 10a4 4 0 0 1-8 0"></path>
+                            </svg>
+                          </a>
+                        </div>
+                        <a href="shop-left-sidebar.html" class="btn-special"
+                          >SHOP <i class="arrow"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="intagram-card swiper-slide">
+                <div class="img-box">
+                  <a href="" class="bg-size">
+                    <img
+                      class="img-fluid bg-img"
+                      src="./img/10.jpg"
+                      alt="instagram"
+                    />
+                  </a>
+                  <div class="on-hover">
+                    <div class="content-box">
+                      <span class="share">
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-plus"
+                          >
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line></svg
+                        ></span>
+                        SHARE
+                      </span>
+
+                      <div class="option-box">
+                        <p>New Offer- 45% Discount</p>
+                        <h5>Moonlight Bay Knit</h5>
+                        <span class="price">$120</span>
+
+                        <div class="control">
+                          <a href="wishlist.html">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-heart"
+                            >
+                              <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                              ></path>
+                            </svg>
+                          </a>
+                          <a href="cart.html">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-shopping-bag"
+                            >
+                              <path
+                                d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                              ></path>
+                              <line x1="3" y1="6" x2="21" y2="6"></line>
+                              <path d="M16 10a4 4 0 0 1-8 0"></path>
+                            </svg>
+                          </a>
+                        </div>
+                        <a href="shop-left-sidebar.html" class="btn-special"
+                          >SHOP <i class="arrow"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="intagram-card swiper-slide">
+                <div class="img-box">
+                  <a href="" class="bg-size">
+                    <img
+                      class="img-fluid bg-img"
+                      src="./img/10.jpg"
+                      alt="instagram"
+                    />
+                  </a>
+                  <div class="on-hover">
+                    <div class="content-box">
+                      <span class="share">
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-plus"
+                          >
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line></svg
+                        ></span>
+                        SHARE
+                      </span>
+
+                      <div class="option-box">
+                        <p>New Offer- 45% Discount</p>
+                        <h5>Moonlight Bay Knit</h5>
+                        <span class="price">$120</span>
+
+                        <div class="control">
+                          <a href="wishlist.html">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-heart"
+                            >
+                              <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                              ></path>
+                            </svg>
+                          </a>
+                          <a href="cart.html">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-shopping-bag"
+                            >
+                              <path
+                                d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                              ></path>
+                              <line x1="3" y1="6" x2="21" y2="6"></line>
+                              <path d="M16 10a4 4 0 0 1-8 0"></path>
+                            </svg>
+                          </a>
+                        </div>
+                        <a href="shop-left-sidebar.html" class="btn-special"
+                          >SHOP <i class="arrow"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="intagram-card swiper-slide">
+                <div class="img-box">
+                  <a href="" class="bg-size">
+                    <img
+                      class="img-fluid bg-img"
+                      src="./img/10.jpg"
+                      alt="instagram"
+                    />
+                  </a>
+                  <div class="on-hover">
+                    <div class="content-box">
+                      <span class="share">
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-plus"
+                          >
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line></svg
+                        ></span>
+                        SHARE
+                      </span>
+
+                      <div class="option-box">
+                        <p>New Offer- 45% Discount</p>
+                        <h5>Moonlight Bay Knit</h5>
+                        <span class="price">$120</span>
+
+                        <div class="control">
+                          <a href="wishlist.html">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-heart"
+                            >
+                              <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                              ></path>
+                            </svg>
+                          </a>
+                          <a href="cart.html">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-shopping-bag"
+                            >
+                              <path
+                                d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                              ></path>
+                              <line x1="3" y1="6" x2="21" y2="6"></line>
+                              <path d="M16 10a4 4 0 0 1-8 0"></path>
+                            </svg>
+                          </a>
+                        </div>
+                        <a href="shop-left-sidebar.html" class="btn-special"
+                          >SHOP <i class="arrow"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="intagram-card swiper-slide">
+                <div class="img-box">
+                  <a href="" class="bg-size">
+                    <img
+                      class="img-fluid bg-img"
+                      src="./img/10.jpg"
+                      alt="instagram"
+                    />
+                  </a>
+                  <div class="on-hover">
+                    <div class="content-box">
+                      <span class="share">
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-plus"
+                          >
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line></svg
+                        ></span>
+                        SHARE
+                      </span>
+
+                      <div class="option-box">
+                        <p>New Offer- 45% Discount</p>
+                        <h5>Moonlight Bay Knit</h5>
+                        <span class="price">$120</span>
+
+                        <div class="control">
+                          <a href="wishlist.html">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-heart"
+                            >
+                              <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                              ></path>
+                            </svg>
+                          </a>
+                          <a href="cart.html">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-shopping-bag"
+                            >
+                              <path
+                                d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                              ></path>
+                              <line x1="3" y1="6" x2="21" y2="6"></line>
+                              <path d="M16 10a4 4 0 0 1-8 0"></path>
+                            </svg>
+                          </a>
+                        </div>
+                        <a href="shop-left-sidebar.html" class="btn-special"
+                          >SHOP <i class="arrow"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="intagram-card swiper-slide">
+                <div class="img-box">
+                  <a href="" class="bg-size">
+                    <img
+                      class="img-fluid bg-img"
+                      src="./img/10.jpg"
+                      alt="instagram"
+                    />
+                  </a>
+                  <div class="on-hover">
+                    <div class="content-box">
+                      <span class="share">
+                        <span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-plus"
+                          >
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line></svg
+                        ></span>
+                        SHARE
+                      </span>
+
+                      <div class="option-box">
+                        <p>New Offer- 45% Discount</p>
+                        <h5>Moonlight Bay Knit</h5>
+                        <span class="price">$120</span>
+
+                        <div class="control">
+                          <a href="wishlist.html">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-heart"
+                            >
+                              <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                              ></path>
+                            </svg>
+                          </a>
+                          <a href="cart.html">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-shopping-bag"
+                            >
+                              <path
+                                d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                              ></path>
+                              <line x1="3" y1="6" x2="21" y2="6"></line>
+                              <path d="M16 10a4 4 0 0 1-8 0"></path>
+                            </svg>
+                          </a>
+                        </div>
+                        <a href="shop-left-sidebar.html" class="btn-special"
+                          >SHOP <i class="arrow"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+        <!-- footer -->
+    <footer>
+        <div class="container">
+          <div class="footer-up">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <h3>Many desktop publishing</h3>
+                <p>
+                  Do you want to receive exclusive email offers? Subscribe to our
+                  <br />
+                  newsletter! You will receive a unique promo code which gives
+                  <br />
+                  you a 20% discount on all our products in 10 minutes.
+                </p>
+              </div>
+              <div class="col-lg-6 text-end">
+                <input
+                  type="email"
+                  name=""
+                  placeholder="Enter your email"
+                  id=""
+                />
+                <button class="sub-button">Subscribe</button>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="footer-middle">
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="middle-left">
+                  <h3>Flatlogic</h3>
+                  <p>
+                    Lorem Ipsum has been the industry's standard dummy text <br />
+                    ever since the 1500s,
+                  </p>
+                  <div class="social-icon-footer">
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="row middle-right">
+                  <div class="col-lg-4">
+                    <h3>COMPANY</h3>
+                    <a href="#">What We Do</a>
+                    <a href="#">What We Do</a>
+                    <a href="#">What We Do</a>
+                    <a href="#">What We Do</a>
+                  </div>
+                  <div class="col-lg-4">
+                    <h3>COMPANY</h3>
+                    <a href="#">What We Do</a>
+                    <a href="#">What We Do</a>
+                    <a href="#">What We Do</a>
+                    <a href="#">What We Do</a>
+                  </div>
+                  <div class="col-lg-4">
+                    <h3>COMPANY</h3>
+                    <a href="#">What We Do</a>
+                    <a href="#">What We Do</a>
+                    <a href="#">What We Do</a>
+                    <a href="#">What We Do</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <p class="text-muted mb-0">
+            © 2020-<!-- -->2022<!-- -->
+            powered by <span class="Footer_navigationLink__1OSze">Flatlogic</span>
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <!-- bootstrap 5 js cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- vanila tilt js -->
+    <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400,
+      });
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+    <script>
+        function filter(){
+            document.getElementById("product-box").style.display ="block";
+            document.getElementById("xmark").style.display ="block";
+            document.getElementById("filter").style.display ="none !important";
+        }
+        function xMark(){
+            document.getElementById("product-box").style.display ="none";
+            document.getElementById("filter").style.display ="none !important";
+        }
+    </script>
+  </body>
+</html>
