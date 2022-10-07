@@ -8,10 +8,11 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
-ul {
+ul,
+li {
   padding: 0;
   margin: 0;
-  list-style: none;
+  list-style: none !important;
 }
 a {
   text-decoration: none !important;
@@ -52,8 +53,55 @@ body {
   cursor: pointer;
   margin: 0px 14px;
 }
-#light{
-    display: none !important;
+.icon-box2 {
+  display: contents;
+}
+.icon-box2 i {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: rgb(243, 78, 58) !important;
+  cursor: pointer;
+  margin: 0px 14px;
+}
+.dropdown-toggle::after {
+   
+  margin-left: -15px !important;
+}
+.dropdown-menu {
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  min-width: 8rem !important;
+  padding: 0.5rem 10px !important;
+  margin: 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: none !important;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2) !important;
+  border-radius: .25rem;
+}
+.dropdown-menu[data-bs-popper] {
+  top: 108%;
+  left: 0;
+  margin-top: 1.125rem !important;
+}
+.dropdown-menu a{
+  font-size: 14px !important;
+  color: black;
+  font-weight: 400;
+  display: block;
+  transition: .5s;
+}
+.dropdown-menu a:hover{
+  color: rgb(243, 78, 58) !important;
+  letter-spacing: 1.5px;
+}
+#light {
+  display: none !important;
 }
 .icon-box i:nth-child(3) {
   font-weight: 600 !important;
@@ -137,13 +185,13 @@ body {
 
 /* category */
 .catagories {
-    padding: calc(15px + 9 * ((100vw - 320px) / 1600));
-    box-shadow: rgba(240, 240, 240, 0.1) 0px 0px 5px;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.4s ease 0s;
-    border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+  padding: calc(15px + 9 * ((100vw - 320px) / 1600));
+  box-shadow: rgba(240, 240, 240, 0.1) 0px 0px 5px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease 0s;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 .catagories .leaf-shape {
   position: absolute;
@@ -211,7 +259,6 @@ body {
   padding: 6px 32px;
   font-size: 12px;
   border-width: 2px;
-
 }
 .btn-special::after {
   height: 2px;
@@ -488,9 +535,9 @@ body {
   background-color: inherit;
 }
 .title-box p {
-    color: #555!important;
-    font-size: 14px;
-    font-weight: 300;
+  color: #555 !important;
+  font-size: 14px;
+  font-weight: 300;
 }
 .brand-banner {
   position: relative;
@@ -712,7 +759,7 @@ body {
   font-weight: normal;
   font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1920 - 320)));
   line-height: calc(20px + (26 - 20) * ((100vw - 320px) / (1920 - 320)));
-  color: #FFBA00;
+  color: #ffba00;
   margin-bottom: calc(0px + (5 - 0) * ((100vw - 320px) / (1920 - 320)));
 }
 .truncate-2 {
@@ -1010,7 +1057,7 @@ footer {
   /* banner */
   section.banner {
     margin-top: 15%;
-}
+  }
   .carousel-text {
     position: absolute;
     top: 12%;
@@ -1105,47 +1152,47 @@ footer {
     font-size: 10px;
     font-weight: 300;
     color: #555555;
-}
-.footer-up input {
-  font-size: 14px;
-  font-weight: 300;
-  color: #555555;
-  padding: 10px 30px;
-  outline: none;
-  position: relative;
-  left: -42px;
-}
-.footer-up button {
-  background: rgb(243, 78, 58);
-  padding: 10px;
-  outline: none !important;
-  border: none;
-  color: #fff;
-  font-weight: 500;
-  margin-left: 15px;
-  position: relative;
-  right: 38px;
-}
-footer {
-  background-color: #262626;
-  padding: 50px 0;
-  text-align: center;
-}
-.middle-left p {
-  font-size: 10px;
-  font-weight: 300;
-  color: #fff;
-  margin-top: 0px;
-  margin-bottom: 12px;
-}
-.social-icon-footer {
-  padding: 20px 0;
-}
-.middle-right a {
-  font-size: 12px;
-  font-weight: 300;
-  color: #555555;
-  display: block;
-  margin-bottom: 10px;
-}
+  }
+  .footer-up input {
+    font-size: 14px;
+    font-weight: 300;
+    color: #555555;
+    padding: 10px 30px;
+    outline: none;
+    position: relative;
+    left: -42px;
+  }
+  .footer-up button {
+    background: rgb(243, 78, 58);
+    padding: 10px;
+    outline: none !important;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 15px;
+    position: relative;
+    right: 38px;
+  }
+  footer {
+    background-color: #262626;
+    padding: 50px 0;
+    text-align: center;
+  }
+  .middle-left p {
+    font-size: 10px;
+    font-weight: 300;
+    color: #fff;
+    margin-top: 0px;
+    margin-bottom: 12px;
+  }
+  .social-icon-footer {
+    padding: 20px 0;
+  }
+  .middle-right a {
+    font-size: 12px;
+    font-weight: 300;
+    color: #555555;
+    display: block;
+    margin-bottom: 10px;
+  }
 }

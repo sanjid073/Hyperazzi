@@ -1016,15 +1016,18 @@ footer {
     padding: 14px;
   }
   /* banner */
+  section.banner {
+    margin-top: 16%;
+  }
   .carousel-text {
     position: absolute;
-    top: 12%;
+    top: 2%;
     text-align: center;
     left: 0;
   }
   .carousel-text p {
     max-width: 584px;
-
+    margin-bottom: 10px;
     font-size: 10px;
     width: 50%;
   }
@@ -1110,47 +1113,47 @@ footer {
     font-size: 10px;
     font-weight: 300;
     color: #555555;
-}
-.footer-up input {
-  font-size: 14px;
-  font-weight: 300;
-  color: #555555;
-  padding: 10px 30px;
-  outline: none;
-  position: relative;
-  left: -42px;
-}
-.footer-up button {
-  background: rgb(243, 78, 58);
-  padding: 10px;
-  outline: none !important;
-  border: none;
-  color: #fff;
-  font-weight: 500;
-  margin-left: 15px;
-  position: relative;
-  right: 38px;
-}
-footer {
-  background-color: #262626;
-  padding: 50px 0;
-  text-align: center;
-}
-.middle-left p {
-  font-size: 10px;
-  font-weight: 300;
-  color: #fff;
-  margin-top: 0px;
-  margin-bottom: 12px;
-}
-.social-icon-footer {
-  padding: 20px 0;
-}
-.middle-right a {
-  font-size: 12px;
-  font-weight: 300;
-  color: #555555;
-  display: block;
-  margin-bottom: 10px;
-}
+  }
+  .footer-up input {
+    font-size: 14px;
+    font-weight: 300;
+    color: #555555;
+    padding: 10px 30px;
+    outline: none;
+    position: relative;
+    left: -42px;
+  }
+  .footer-up button {
+    background: rgb(243, 78, 58);
+    padding: 10px;
+    outline: none !important;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 15px;
+    position: relative;
+    right: 38px;
+  }
+  footer {
+    background-color: #262626;
+    padding: 50px 0;
+    text-align: center;
+  }
+  .middle-left p {
+    font-size: 10px;
+    font-weight: 300;
+    color: #fff;
+    margin-top: 0px;
+    margin-bottom: 12px;
+  }
+  .social-icon-footer {
+    padding: 20px 0;
+  }
+  .middle-right a {
+    font-size: 12px;
+    font-weight: 300;
+    color: #555555;
+    display: block;
+    margin-bottom: 10px;
+  }
 }

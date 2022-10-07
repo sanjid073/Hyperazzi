@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/cart.css" />
+    <!-- bootstrap5 css cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- font awosome kit -->
+    <script
+      src="https://kit.fontawesome.com/0ffd30f08f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- javascript link -->
+    <script src="./js/cart.js"></script>
+    <title>Cart</title>
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <nav class="navbar navbar-expand-lg shadow-lg navbar-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand nav-logo" href="#"
+            ><img src="./img/Hyperazzi.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler nav-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">Faq</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <div class="icon-box">
+                <i onclick="window.location ='index.html'" class="fa-solid fa-moon"></i>
+              
+          
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle icon-box2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-regular fa-user "></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <a href="">Login</a>
+                   <a href="">Register</a>
+                </ul>
+              </li>
+
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- shopping-cart -->
+      <section class="shopping-cart-section mb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <h2 class="cart-item-title">Shopping Cart</h2>
+              <div class="cart-item">
+                <table class="table table-borderless">
+                  <thead>
+                    <tr style="border-bottom: 1px solid rgb(217, 217, 217)">
+                      <th class="bg-transparent text-dark px-0">Product</th>
+                      <th class="bg-transparent text-dark quantity px-0">Quantity</th>
+                      <th class="bg-transparent text-dark px-0">Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="mt-2">
+                      <td class="px-0 pt-4">
+                        <div class="d-flex align-items-center">
+                          <img src="./img/1.jpg" width="100" class="me-4" />
+                          <div class="items">
+                            <h6 class="text-muted">Shirts</h6>
+                            <h5 class="fw-bold">Coats & Jackets</h5>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="px-0 pt-4">
+                        <div class="d-flex align-items-center">
+                          <button
+                            type="button"
+                            class="Cart_quantityBtn__2dpnu bg-transparent border-0 p-1 fw-bold mr-3 btn btn-secondary text-dark me-2"
+                          >
+                            -
+                          </button>
+                          <p class="fw-bold mb-0">1</p>
+                          <button
+                            type="button"
+                            class="Cart_quantityBtn__2dpnu bg-transparent border-0 p-1 fw-bold ml-3 btn btn-secondary text-dark ms-2"
+                          >
+                            +
+                          </button>
+                        </div>
+                      </td>
+                      <td class="px-0 pt-4">
+                        <h6 class="fw-bold mb-0">150$</h6>
+                      </td>
+                      <td class="px-0 pt-4">
+                        <button
+                          type="button"
+                          class="bg-transparent border-0 p-0 btn btn-secondary"
+                        >
+                          <img
+                            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy40MTQyIDEyTDE3LjcwNzIgNy43MDcwMUMxOC4wOTgyIDcuMzE2MDEgMTguMDk4MiA2LjY4NDAxIDE3LjcwNzIgNi4yOTMwMUMxNy4zMTYyIDUuOTAyMDEgMTYuNjg0MiA1LjkwMjAxIDE2LjI5MzMgNi4yOTMwMUwxMi4wMDAyIDEwLjU4Nkw3LjcwNzI1IDYuMjkzMDFDNy4zMTYyNSA1LjkwMjAxIDYuNjg0MjUgNS45MDIwMSA2LjI5MzI1IDYuMjkzMDFDNS45MDIyNSA2LjY4NDAxIDUuOTAyMjUgNy4zMTYwMSA2LjI5MzI1IDcuNzA3MDFMMTAuNTg2MiAxMkw2LjI5MzI1IDE2LjI5M0M1LjkwMjI1IDE2LjY4NCA1LjkwMjI1IDE3LjMxNiA2LjI5MzI1IDE3LjcwN0M2LjQ4ODI1IDE3LjkwMiA2Ljc0NDI1IDE4IDcuMDAwMjUgMThDNy4yNTYyNSAxOCA3LjUxMjI1IDE3LjkwMiA3LjcwNzI1IDE3LjcwN0wxMi4wMDAyIDEzLjQxNEwxNi4yOTMzIDE3LjcwN0MxNi40ODgyIDE3LjkwMiAxNi43NDQzIDE4IDE3LjAwMDIgMThDMTcuMjU2MiAxOCAxNy41MTIyIDE3LjkwMiAxNy43MDcyIDE3LjcwN0MxOC4wOTgyIDE3LjMxNiAxOC4wOTgyIDE2LjY4NCAxNy43MDcyIDE2LjI5M0wxMy40MTQyIDEyWiIgZmlsbD0iIzlEOUQ5RCIvPgo8bWFzayBpZD0ibWFzazAiIG1hc2stdHlwZT0iYWxwaGEiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjYiIHk9IjUiIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTMuNDE0MiAxMkwxNy43MDcyIDcuNzA3MDFDMTguMDk4MiA3LjMxNjAxIDE4LjA5ODIgNi42ODQwMSAxNy43MDcyIDYuMjkzMDFDMTcuMzE2MiA1LjkwMjAxIDE2LjY4NDIgNS45MDIwMSAxNi4yOTMzIDYuMjkzMDFMMTIuMDAwMiAxMC41ODZMNy43MDcyNSA2LjI5MzAxQzcuMzE2MjUgNS45MDIwMSA2LjY4NDI1IDUuOTAyMDEgNi4yOTMyNSA2LjI5MzAxQzUuOTAyMjUgNi42ODQwMSA1LjkwMjI1IDcuMzE2MDEgNi4yOTMyNSA3LjcwNzAxTDEwLjU4NjIgMTJMNi4yOTMyNSAxNi4yOTNDNS45MDIyNSAxNi42ODQgNS45MDIyNSAxNy4zMTYgNi4yOTMyNSAxNy43MDdDNi40ODgyNSAxNy45MDIgNi43NDQyNSAxOCA3LjAwMDI1IDE4QzcuMjU2MjUgMTggNy41MTIyNSAxNy45MDIgNy43MDcyNSAxNy43MDdMMTIuMDAwMiAxMy40MTRMMTYuMjkzMyAxNy43MDdDMTYuNDg4MiAxNy45MDIgMTYuNzQ0MyAxOCAxNy4wMDAyIDE4QzE3LjI1NjIgMTggMTcuNTEyMiAxNy45MDIgMTcuNzA3MiAxNy43MDdDMTguMDk4MiAxNy4zMTYgMTguMDk4MiAxNi42ODQgMTcuNzA3MiAxNi4yOTNMMTMuNDE0MiAxMloiIGZpbGw9IndoaXRlIi8+CjwvbWFzaz4KPGcgbWFzaz0idXJsKCNtYXNrMCkiPgo8cmVjdCB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9IiM5RDlEOUQiLz4KPC9nPgo8L3N2Zz4K"
+                            alt="close"
+                          />
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr class="mt-2">
+                      <td class="px-0 pt-4">
+                        <div class="d-flex align-items-center">
+                          <img src="./img/1.jpg" width="100" class="me-4" />
+                          <div class="items">
+                            <h6 class="text-muted">Shirts</h6>
+                            <h5 class="fw-bold">Coats & Jackets</h5>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="px-0 pt-4">
+                        <div class="d-flex align-items-center">
+                          <button
+                            type="button"
+                            class="Cart_quantityBtn__2dpnu bg-transparent border-0 p-1 fw-bold mr-3 btn btn-secondary text-dark me-2"
+                          >
+                            -
+                          </button>
+                          <p class="fw-bold mb-0">1</p>
+                          <button
+                            type="button"
+                            class="Cart_quantityBtn__2dpnu bg-transparent border-0 p-1 fw-bold ml-3 btn btn-secondary text-dark ms-2"
+                          >
+                            +
+                          </button>
+                        </div>
+                      </td>
+                      <td class="px-0 pt-4">
+                        <h6 class="fw-bold mb-0">150$</h6>
+                      </td>
+                      <td class="px-0 pt-4">
+                        <button
+                          type="button"
+                          class="bg-transparent border-0 p-0 btn btn-secondary"
+                        >
+                          <img
+                            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy40MTQyIDEyTDE3LjcwNzIgNy43MDcwMUMxOC4wOTgyIDcuMzE2MDEgMTguMDk4MiA2LjY4NDAxIDE3LjcwNzIgNi4yOTMwMUMxNy4zMTYyIDUuOTAyMDEgMTYuNjg0MiA1LjkwMjAxIDE2LjI5MzMgNi4yOTMwMUwxMi4wMDAyIDEwLjU4Nkw3LjcwNzI1IDYuMjkzMDFDNy4zMTYyNSA1LjkwMjAxIDYuNjg0MjUgNS45MDIwMSA2LjI5MzI1IDYuMjkzMDFDNS45MDIyNSA2LjY4NDAxIDUuOTAyMjUgNy4zMTYwMSA2LjI5MzI1IDcuNzA3MDFMMTAuNTg2MiAxMkw2LjI5MzI1IDE2LjI5M0M1LjkwMjI1IDE2LjY4NCA1LjkwMjI1IDE3LjMxNiA2LjI5MzI1IDE3LjcwN0M2LjQ4ODI1IDE3LjkwMiA2Ljc0NDI1IDE4IDcuMDAwMjUgMThDNy4yNTYyNSAxOCA3LjUxMjI1IDE3LjkwMiA3LjcwNzI1IDE3LjcwN0wxMi4wMDAyIDEzLjQxNEwxNi4yOTMzIDE3LjcwN0MxNi40ODgyIDE3LjkwMiAxNi43NDQzIDE4IDE3LjAwMDIgMThDMTcuMjU2MiAxOCAxNy41MTIyIDE3LjkwMiAxNy43MDcyIDE3LjcwN0MxOC4wOTgyIDE3LjMxNiAxOC4wOTgyIDE2LjY4NCAxNy43MDcyIDE2LjI5M0wxMy40MTQyIDEyWiIgZmlsbD0iIzlEOUQ5RCIvPgo8bWFzayBpZD0ibWFzazAiIG1hc2stdHlwZT0iYWxwaGEiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjYiIHk9IjUiIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTMuNDE0MiAxMkwxNy43MDcyIDcuNzA3MDFDMTguMDk4MiA3LjMxNjAxIDE4LjA5ODIgNi42ODQwMSAxNy43MDcyIDYuMjkzMDFDMTcuMzE2MiA1LjkwMjAxIDE2LjY4NDIgNS45MDIwMSAxNi4yOTMzIDYuMjkzMDFMMTIuMDAwMiAxMC41ODZMNy43MDcyNSA2LjI5MzAxQzcuMzE2MjUgNS45MDIwMSA2LjY4NDI1IDUuOTAyMDEgNi4yOTMyNSA2LjI5MzAxQzUuOTAyMjUgNi42ODQwMSA1LjkwMjI1IDcuMzE2MDEgNi4yOTMyNSA3LjcwNzAxTDEwLjU4NjIgMTJMNi4yOTMyNSAxNi4yOTNDNS45MDIyNSAxNi42ODQgNS45MDIyNSAxNy4zMTYgNi4yOTMyNSAxNy43MDdDNi40ODgyNSAxNy45MDIgNi43NDQyNSAxOCA3LjAwMDI1IDE4QzcuMjU2MjUgMTggNy41MTIyNSAxNy45MDIgNy43MDcyNSAxNy43MDdMMTIuMDAwMiAxMy40MTRMMTYuMjkzMyAxNy43MDdDMTYuNDg4MiAxNy45MDIgMTYuNzQ0MyAxOCAxNy4wMDAyIDE4QzE3LjI1NjIgMTggMTcuNTEyMiAxNy45MDIgMTcuNzA3MiAxNy43MDdDMTguMDk4MiAxNy4zMTYgMTguMDk4MiAxNi42ODQgMTcuNzA3MiAxNi4yOTNMMTMuNDE0MiAxMloiIGZpbGw9IndoaXRlIi8+CjwvbWFzaz4KPGcgbWFzaz0idXJsKCNtYXNrMCkiPgo8cmVjdCB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9IiM5RDlEOUQiLz4KPC9nPgo8L3N2Zz4K"
+                            alt="close"
+                          />
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="cart-total">
+                <section class="Cart_cartTotal__2jJho">
+                  <h2 class="fw-bold mb-5 total-title">Cart Total</h2>
+                  <div class="d-flex sub-total">
+                    <h6 class="fw-bold me-5 mb-0">Subtotal:</h6>
+                    <h6 class="fw-bold mb-0">150$</h6>
+                  </div>
+                  <hr class="my-4" />
+                  <div class="d-flex sub-total">
+                    <h6 class="fw-bold me-5 mb-0">Shipping:</h6>
+                    <div>
+                      <h6 class="fw-bold mb-3">Free Shipping</h6>
+                      <p class="mb-0">
+                        Shipping options will be updated during checkout.
+                      </p>
+                    </div>
+                  </div>
+                  <hr class="my-4" />
+                  <div class="d-flex total">
+                    <h5 class="fw-bold" style="margin-right: 63px">Total:</h5>
+                    <h5 class="fw-bold">150$</h5>
+                  </div>
+
+                  <a href="#" class="btn-solid">Check out <i class="arrow"></i></a>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+       <!-- footer -->
+    <footer>
+        <div class="container">
+          <div class="footer-up">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <h3>Many desktop publishing</h3>
+                <p>
+                  Do you want to receive exclusive email offers? Subscribe to our
+                  <br />
+                  newsletter! You will receive a unique promo code which gives
+                  <br />
+                  you a 20% discount on all our products in 10 minutes.
+                </p>
+              </div>
+              <div class="col-lg-6 text-end">
+                <input
+                  type="email"
+                  name=""
+                  placeholder="Enter your email"
+                  id=""
+                />
+                <button class="sub-button">Subscribe</button>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="footer-middle">
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="middle-left">
+                  <h3>Flatlogic</h3>
+                  <p>
+                    Lorem Ipsum has been the industry's standard dummy text <br />
+                    ever since the 1500s,
+                  </p>
+                  <div class="social-icon-footer">
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="row middle-right">
+                  <div class="col-lg-4">
+                    <h3>COMPANY</h3>
+                    <a href="#">What We Do</a>
+                    <a href="#">What We Do</a>
+                    <a href="#">What We Do</a>
+                    <a href="#">What We Do</a>
+                  </div>
+                  <div class="col-lg-4">
+                    <h3>COMPANY</h3>
+                    <a href="#">What We Do</a>
+                    <a href="#">What We Do</a>
+                    <a href="#">What We Do</a>
+                    <a href="#">What We Do</a>
+                  </div>
+                  <div class="col-lg-4">
+                    <h3>COMPANY</h3>
+                    <a href="#">What We Do</a>
+                    <a href="#">What We Do</a>
+                    <a href="#">What We Do</a>
+                    <a href="#">What We Do</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <p class="text-muted mb-0">
+            © 2020-<!-- -->2022<!-- -->
+            powered by <span class="Footer_navigationLink__1OSze">Flatlogic</span>
+          </p>
+        </div>
+      </footer>
+    </main>
+
+      <!-- bootstrap 5 js cdn link -->
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,253 @@
+/* font import link */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat:wght@600;700;800;900&display=swap");
+/* defult css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none !important;
+}
+a {
+  text-decoration: none !important;
+}
+a:hover {
+  color: black !important;
+}
+body {
+  /* background: #22282c !important;
+  color: white !important; */
+}
+
+.page-body {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+.page-body .content-box {
+  padding: 20px calc(20px + (200 - 20) * ((100vw - 991px) / (1920 - 991)));
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.page-body .content-box > div {
+  width: 100%;
+}
+.page-body .content-box h5 {
+    display: inline-block;
+    font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (1920 - 320)));
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    line-height: calc(25px + (30 - 25) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: calc(6px + (10 - 6) * ((100vw - 320px) / (1920 - 320)));
+    color: #262834;
+    position: relative;
+    font-size: 28px;
+    font-weight: 700;
+}
+.page-body .content-box h5 span {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  bottom: 0;
+}
+.bg-theme-blue {
+  background-color: rgba(15, 143, 172, 0.1) !important;
+}
+.page-body .content-box p {
+    margin-top: 5px;
+    margin-bottom: 25px;
+    font-size: 13px !important;
+    font-weight: 500;
+}
+.content-color {
+  color: #767676 !important;
+}
+.font-md {
+  font-size: calc(
+    14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))
+  ) !important;
+}
+.custom-form label {
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+  color: #262834;
+  font-weight: 500;
+  margin-bottom: 8px;
+  line-height: 20px;
+  margin-top: -2px;
+  display: block;
+}
+.page-body .custom-form.form-pill .input-box .form-control {
+  padding: calc(8px + (11 - 8) * ((100vw - 320px) / (1920 - 320))) 40px
+    calc(8px + (11 - 8) * ((100vw - 320px) / (1920 - 320))) 15px;
+}
+.custom-form.form-pill input,
+.custom-form.form-pill .form-control {
+  border-radius: 100px;
+  text-align: left;
+  padding: 8px 40px 8px 15px;
+}
+.custom-form input,
+.custom-form .form-control {
+  font-size: 14px;
+  color: #262834;
+  font-weight: 400;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+.custom-form .input-box:not(:first-of-type) {
+  margin-top: calc(20px + (25 - 20) * ((100vw - 320px) / (1920 - 320)));
+}
+.page-body .content-box .forgot-link {
+  margin-top: 5px;
+  float: right;
+  color: #767676;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.custom-form.form-pill .input-box .icon-input {
+  position: relative;
+}
+.page-body .content-box button {
+  width: 100%;
+  margin-top: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
+  -webkit-box-pack: center;
+  border: none;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: calc(9px + (11 - 9) * ((100vw - 320px) / (1920 - 320)))
+    calc(20px + (50 - 20) * ((100vw - 320px) / (1920 - 320)));
+}
+.btn-solid,
+.btn-outline,
+.btn-special {
+  font-weight: 500;
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+  line-height: 23px;
+  background-color: rgb(243, 78, 58) !important;
+  padding: calc(8px + (12 - 8) * ((100vw - 320px) / (1920 - 320)))
+    calc(18px + (50 - 18) * ((100vw - 320px) / (1920 - 320)));
+  color: #fff !important;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn-outline {
+  border: 1px solid rgb(243, 78, 58);
+  background-color: #fff !important;
+  color: rgb(243, 78, 58) !important;
+}
+.btn-outline:hover {
+    background-color: rgb(243, 78, 58) !important;
+    color: #fff !important;
+}
+.page-body .content-box .backto-link {
+  text-decoration: underline;
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+.content-color {
+  color: #767676 !important;
+}
+.font-default {
+  font-size: 14px !important;
+}
+.theme-color {
+  color: rgb(243, 78, 58) !important;
+}
+.page-body .content-box .line {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.page-body .content-box .line span {
+  padding: 0 6px;
+  background-color: #fff;
+  color: #767676;
+  position: relative;
+  z-index: 2;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.page-body .content-box .line::after {
+  content: "";
+  height: 1px;
+  background-color: #ddd;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.page-body .content-box .button-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 100px;
+  width: 100%;
+  gap: 13px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #767676;
+  font-size: 14px;
+  background-color: #fafafa;
+  -webkit-box-shadow: 0 0 8px #eee;
+  box-shadow: 0 0 8px #eee;
+  margin-top: 20px;
+}
+.page-body .content-box .button-link img {
+  width: 18px;
+  height: 18px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+img.bg-img {
+  width: 100%;
+}
+/* media quirry mobile responsive */
+@media (min-width: 320px) and (max-width: 1024px) {
+    .page-body .content-box{
+        width: 80%;
+    }
+}
