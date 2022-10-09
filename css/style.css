@@ -24,10 +24,7 @@ a {
 a:hover {
   color: black !important;
 }
-body {
-  /* background: #22282c !important;
-  color: white !important; */
-}
+
 /* navbar */
 .nav-link i {
   font-size: 10px !important;
@@ -229,9 +226,7 @@ body {
   margin: calc(25px + 9 * ((100vw - 320px) / 1600)) auto;
   width: calc(36px + 14 * ((100vw - 320px) / 1600));
 }
-.catagories a .img-wrap img {
-  /* filter: invert(1); */
-}
+
 .catagories a .img-wrap img {
   width: 100%;
   position: relative;
@@ -388,8 +383,7 @@ body {
 .card:hover .card-icon {
   display: block;
 }
-.view-more-button {
-}
+
 .view-more-button button {
   color: #bd744c;
   border-color: #bd744c !important;
@@ -979,8 +973,7 @@ body {
 .shipping-text {
   margin-left: 20px;
 }
-.shipping-text h3 {
-}
+
 .shipping-text p {
   color: #a9a9a9;
 }
@@ -989,8 +982,7 @@ footer {
   background-color: #262626;
   padding: 50px 0;
 }
-.footer-up {
-}
+
 .footer-up h3 {
   font-size: 18px;
   font-weight: 700;
@@ -1017,10 +1009,7 @@ footer {
   font-weight: 500;
   margin-left: 15px;
 }
-.footer-middle {
-}
-.middle-left {
-}
+
 .middle-left h3 {
   font-size: 18px;
   font-weight: 700;
@@ -1033,8 +1022,7 @@ footer {
   margin-top: 21px;
   margin-bottom: 30px;
 }
-.social-icon-footer {
-}
+
 .social-icon-footer i {
   font-size: 24px;
   margin-right: 10px;
@@ -1044,8 +1032,7 @@ footer {
 .social-icon-footer i:hover {
   color: rgb(243, 78, 58);
 }
-.middle-right {
-}
+
 .middle-right h3 {
   font-size: 18px;
   font-weight: 700;

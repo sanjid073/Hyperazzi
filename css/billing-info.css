@@ -8,7 +8,8 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
-ul,li {
+ul,
+li {
   padding: 0;
   margin: 0;
   list-style: none !important;
@@ -19,10 +20,7 @@ a {
 a:hover {
   color: black !important;
 }
-body {
-  /* background: #22282c !important;
-  color: white !important; */
-}
+
 /* navbar */
 .nav-link i {
   font-size: 10px !important;
@@ -192,7 +190,6 @@ label {
 input.card {
   background: url(../img/credit-card.ad36333736e1c7bae5d9f570fb4f2f28.svg)
     no-repeat 100%;
-  -webkit-appearance: none;
   background-position: calc(100% - 15px);
   background-color: #fff;
   padding-right: 55px;
@@ -204,7 +201,6 @@ input.card {
 select.form-control {
   background: url(../img/chevron-down.40e09b36d30fe69cfd4cfa3e7ad4e58e.svg)
     no-repeat 100%;
-  -webkit-appearance: none;
   background-position: calc(100% - 15px);
   background-color: #fff;
 }
@@ -215,136 +211,53 @@ input.info {
   background-color: #fff;
 }
 .btn-solid {
-    font-size: calc(12px + 4 * ((100vw - 320px) / 1600));
-    padding: calc(4px + 8 * ((100vw - 320px) / 1600))
-      calc(20px + 30 * ((100vw - 320px) / 1600));
-    color: rgb(240, 240, 240) !important;
-    background-color: rgb(243, 78, 58);
-    font-weight: 500;
-    transition: all 0.3s ease 0s;
-    position: relative;
-    width: 100%;
-    display: block;
-    text-align: center;
-  }
-  .btn-solid:hover {
-    background-color: transparent;
-    border: 1px solid rgb(243, 78, 58);
-    color: rgb(243, 78, 58) !important;
-  }
-  .btn-solid::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 2.5px;
-    background-color: inherit;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -6px;
-    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
-  }
-  .btn-solid:hover::after {
-    width: 0px;
-  }
+  font-size: calc(12px + 4 * ((100vw - 320px) / 1600));
+  padding: calc(4px + 8 * ((100vw - 320px) / 1600))
+    calc(20px + 30 * ((100vw - 320px) / 1600));
+  color: rgb(240, 240, 240) !important;
+  background-color: rgb(243, 78, 58);
+  font-weight: 500;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.btn-solid:hover {
+  background-color: transparent;
+  border: 1px solid rgb(243, 78, 58);
+  color: rgb(243, 78, 58) !important;
+}
+.btn-solid::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2.5px;
+  background-color: inherit;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -6px;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
+}
+.btn-solid:hover::after {
+  width: 0px;
+}
 
-  /* fotter */
+/* fotter */
 footer {
-    background-color: #262626;
-    padding: 50px 0;
-  }
-  .footer-up {
-  }
-  .footer-up h3 {
-    font-size: 18px;
-    font-weight: 700;
-    color: #fff;
-  }
-  .footer-up p {
-    font-size: 14px;
-    font-weight: 300;
-    color: #555555;
-  }
-  .footer-up input {
-    font-size: 14px;
-    font-weight: 300;
-    color: #555555;
-    padding: 10px 30px;
-    outline: none;
-  }
-  .footer-up button {
-    background: rgb(243, 78, 58);
-    padding: 10px;
-    outline: none !important;
-    border: none;
-    color: #fff;
-    font-weight: 500;
-    margin-left: 15px;
-  }
-  .footer-middle {
-  }
-  .middle-left {
-  }
-  .middle-left h3 {
-    font-size: 18px;
-    font-weight: 700;
-    color: #fff;
-  }
-  .middle-left p {
-    font-size: 14px;
-    font-weight: 300;
-    color: #fff;
-    margin-top: 21px;
-    margin-bottom: 30px;
-  }
-  .social-icon-footer {
-  }
-  .social-icon-footer i {
-    font-size: 24px;
-    margin-right: 10px;
-    cursor: pointer;
-    color: #fff;
-  }
-  .social-icon-footer i:hover {
-    color: rgb(243, 78, 58);
-  }
-  .middle-right {
-  }
-  .middle-right h3 {
-    font-size: 18px;
-    font-weight: 700;
-    color: #fff;
-  }
-  .middle-right a {
-    font-size: 14px;
-    font-weight: 300;
-    color: #555555;
-    display: block;
-  }
-  
-  /* media quirry mobile responsive */
-  @media (min-width: 320px) and (max-width: 1024px) {
-    /* header */
-    .nav-button {
-      color: #fff !important;
-    }
-    .nav-button span {
-      color: #fff !important;
-    }
-    .icon-box {
-      display: flex;
-      justify-content: space-between;
-    }
-    .icon-box i {
-      font-size: 20px !important;
-      padding: 14px;
-    }
+  background-color: #262626;
+  padding: 50px 0;
+}
 
-
-     /* footer */
-  .footer-up p {
-    font-size: 10px;
-    font-weight: 300;
-    color: #555555;
+.footer-up h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+.footer-up p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #555555;
 }
 .footer-up input {
   font-size: 14px;
@@ -352,8 +265,6 @@ footer {
   color: #555555;
   padding: 10px 30px;
   outline: none;
-  position: relative;
-  left: -42px;
 }
 .footer-up button {
   background: rgb(243, 78, 58);
@@ -363,33 +274,110 @@ footer {
   color: #fff;
   font-weight: 500;
   margin-left: 15px;
-  position: relative;
-  right: 38px;
 }
-footer {
-  background-color: #262626;
-  padding: 50px 0;
-  text-align: center;
+
+.middle-left h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
 }
 .middle-left p {
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 300;
   color: #fff;
-  margin-top: 0px;
-  margin-bottom: 12px;
+  margin-top: 21px;
+  margin-bottom: 30px;
 }
-.social-icon-footer {
-  padding: 20px 0;
+
+.social-icon-footer i {
+  font-size: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: #fff;
+}
+.social-icon-footer i:hover {
+  color: rgb(243, 78, 58);
+}
+
+.middle-right h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
 }
 .middle-right a {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
   color: #555555;
   display: block;
-  margin-bottom: 10px;
 }
-.billing-adress {
+
+/* media quirry mobile responsive */
+@media (min-width: 320px) and (max-width: 1024px) {
+  /* header */
+  .nav-button {
+    color: #fff !important;
+  }
+  .nav-button span {
+    color: #fff !important;
+  }
+  .icon-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .icon-box i {
+    font-size: 20px !important;
+    padding: 14px;
+  }
+
+  /* footer */
+  .footer-up p {
+    font-size: 10px;
+    font-weight: 300;
+    color: #555555;
+  }
+  .footer-up input {
+    font-size: 14px;
+    font-weight: 300;
+    color: #555555;
+    padding: 10px 30px;
+    outline: none;
+    position: relative;
+    left: -42px;
+  }
+  .footer-up button {
+    background: rgb(243, 78, 58);
+    padding: 10px;
+    outline: none !important;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 15px;
+    position: relative;
+    right: 38px;
+  }
+  footer {
+    background-color: #262626;
+    padding: 50px 0;
+    text-align: center;
+  }
+  .middle-left p {
+    font-size: 10px;
+    font-weight: 300;
+    color: #fff;
+    margin-top: 0px;
+    margin-bottom: 12px;
+  }
+  .social-icon-footer {
+    padding: 20px 0;
+  }
+  .middle-right a {
+    font-size: 12px;
+    font-weight: 300;
+    color: #555555;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .billing-adress {
     margin-top: 22%;
+  }
 }
-}
-  

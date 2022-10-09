@@ -20,10 +20,6 @@ a {
 a:hover {
   color: black !important;
 }
-body {
-  /* background: #22282c !important;
-  color: white !important; */
-}
 
 .page-body {
   width: 100%;
@@ -51,16 +47,16 @@ body {
   width: 100%;
 }
 .page-body .content-box h5 {
-    display: inline-block;
-    font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (1920 - 320)));
-    font-weight: 500;
-    font-family: "Montserrat", sans-serif;
-    line-height: calc(25px + (30 - 25) * ((100vw - 320px) / (1920 - 320)));
-    margin-bottom: calc(6px + (10 - 6) * ((100vw - 320px) / (1920 - 320)));
-    color: #262834;
-    position: relative;
-    font-size: 28px;
-    font-weight: 700;
+  display: inline-block;
+  font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (1920 - 320)));
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  line-height: calc(25px + (30 - 25) * ((100vw - 320px) / (1920 - 320)));
+  margin-bottom: calc(6px + (10 - 6) * ((100vw - 320px) / (1920 - 320)));
+  color: #262834;
+  position: relative;
+  font-size: 28px;
+  font-weight: 700;
 }
 .page-body .content-box h5 span {
   width: 100%;
@@ -75,10 +71,10 @@ body {
   background-color: rgba(15, 143, 172, 0.1) !important;
 }
 .page-body .content-box p {
-    margin-top: 5px;
-    margin-bottom: 25px;
-    font-size: 13px !important;
-    font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  font-size: 13px !important;
+  font-weight: 500;
 }
 .content-color {
   color: #767676 !important;
@@ -165,8 +161,8 @@ body {
   color: rgb(243, 78, 58) !important;
 }
 .btn-outline:hover {
-    background-color: rgb(243, 78, 58) !important;
-    color: #fff !important;
+  background-color: rgb(243, 78, 58) !important;
+  color: #fff !important;
 }
 .page-body .content-box .backto-link {
   text-decoration: underline;
@@ -247,7 +243,7 @@ img.bg-img {
 }
 /* media quirry mobile responsive */
 @media (min-width: 320px) and (max-width: 1024px) {
-    .page-body .content-box{
-        width: 80%;
-    }
+  .page-body .content-box {
+    width: 80%;
+  }
 }

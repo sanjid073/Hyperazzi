@@ -8,7 +8,8 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
-ul,li {
+ul,
+li {
   padding: 0;
   margin: 0;
   list-style: none !important;
@@ -19,10 +20,7 @@ a {
 a:hover {
   color: black !important;
 }
-body {
-  /* background: #22282c !important;
-  color: white !important; */
-}
+
 /* navbar */
 .nav-link i {
   font-size: 10px !important;
@@ -219,8 +217,7 @@ footer {
   background-color: #262626;
   padding: 50px 0;
 }
-.footer-up {
-}
+
 .footer-up h3 {
   font-size: 18px;
   font-weight: 700;
@@ -285,7 +282,7 @@ footer {
 
 /* media quirry mobile responsive */
 @media (min-width: 320px) and (max-width: 1024px) {
-    /* header */
+  /* header */
   .nav-button {
     color: #fff !important;
   }
@@ -300,62 +297,62 @@ footer {
     font-size: 20px !important;
     padding: 14px;
   }
-  .quantity{
+  .quantity {
     margin-left: 10px !important;
   }
-    /* footer */
-    .footer-up p {
-        font-size: 10px;
-        font-weight: 300;
-        color: #555555;
-    }
-    .footer-up input {
-      font-size: 14px;
-      font-weight: 300;
-      color: #555555;
-      padding: 10px 30px;
-      outline: none;
-      position: relative;
-      left: -42px;
-    }
-    .footer-up button {
-      background: rgb(243, 78, 58);
-      padding: 10px;
-      outline: none !important;
-      border: none;
-      color: #fff;
-      font-weight: 500;
-      margin-left: 15px;
-      position: relative;
-      right: 38px;
-    }
-    footer {
-      background-color: #262626;
-      padding: 50px 0;
-      text-align: center;
-    }
-    .middle-left p {
-      font-size: 10px;
-      font-weight: 300;
-      color: #fff;
-      margin-top: 0px;
-      margin-bottom: 12px;
-    }
-    .footer-middle {
-        text-align: center;
-    }
-    .social-icon-footer {
-      padding: 20px 0;
-      margin-bottom: 10px;
-    }
-    .middle-right a {
-      font-size: 12px;
-      font-weight: 300;
-      color: #555555;
-      display: block;
-      margin-bottom: 10px;
-    }
-    .social-icon-footer {
-        margin-bottom: 20px;
-    }
+  /* footer */
+  .footer-up p {
+    font-size: 10px;
+    font-weight: 300;
+    color: #555555;
+  }
+  .footer-up input {
+    font-size: 14px;
+    font-weight: 300;
+    color: #555555;
+    padding: 10px 30px;
+    outline: none;
+    position: relative;
+    left: -42px;
+  }
+  .footer-up button {
+    background: rgb(243, 78, 58);
+    padding: 10px;
+    outline: none !important;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 15px;
+    position: relative;
+    right: 38px;
+  }
+  footer {
+    background-color: #262626;
+    padding: 50px 0;
+    text-align: center;
+  }
+  .middle-left p {
+    font-size: 10px;
+    font-weight: 300;
+    color: #fff;
+    margin-top: 0px;
+    margin-bottom: 12px;
+  }
+  .footer-middle {
+    text-align: center;
+  }
+  .social-icon-footer {
+    padding: 20px 0;
+    margin-bottom: 10px;
+  }
+  .middle-right a {
+    font-size: 12px;
+    font-weight: 300;
+    color: #555555;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .social-icon-footer {
+    margin-bottom: 20px;
+  }
 }
