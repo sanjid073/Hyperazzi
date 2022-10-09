@@ -13,15 +13,22 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-     <!-- font awosome kit -->
-     <script
-     src="https://kit.fontawesome.com/0ffd30f08f.js"
-     crossorigin="anonymous"
-   ></script>
+
+    <!-- font awosome kit -->
+    <script
+      src="https://kit.fontawesome.com/0ffd30f08f.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- flaticon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
     />
 
     <!-- javascript link -->
@@ -31,7 +38,7 @@
   <body>
     <!-- header start -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+      <nav class="navbar navbar-expand-lg shadow-lg navbar-light fixed-top">
         <div class="container">
           <a class="navbar-brand nav-logo" href="#"
             ><img src="./img/Hyperazzi.png" alt=""
@@ -50,23 +57,55 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="index.html"
+                >
+                  Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./shop.html">Shop</a>
+                <a class="nav-link" href="shop.html"
+                  ><i class="fi fi-rr-shop"></i> Shop</a
+                >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Faq</a>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="faq.html">Faq</a>
               </li>
 
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact Us</a>
-              </li>
+              </li> -->
             </ul>
             <div class="icon-box">
-              <i onclick="window.location ='light.html'" class="fa-solid  fa-lightbulb"></i>
-              <i class="fa-regular fa-user d-block"></i>
-              <i class="fa-solid fa-cart-shopping"></i>
+              <i class="fa-solid fa-heart d-block"></i>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle icon-box2"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-regular fa-user"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a href="./login.html"
+                    ><i class="fa-solid fa-right-to-bracket"></i> Login</a
+                  >
+                  <a href="./register.html"
+                    ><i class="fa-solid fa-user-plus"></i>Register</a
+                  >
+                </ul>
+              </li>
+
+              <i
+                onclick="window.location ='./cart.html'"
+                class="fa-solid fa-cart-shopping"
+              ></i>
             </div>
           </div>
         </div>
@@ -103,7 +142,7 @@
             ></button>
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active mx-auto text-center">
               <img src="./img/banner.png" class="d-block" alt="..." />
               <div class="carousel-text">
                 <h1>
@@ -149,24 +188,6 @@
               </div>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </section>
 
@@ -179,7 +200,7 @@
                 <img class="leaf-shape" src="./img/leaf.svg" alt="leaf" />
                 <a href="shop-left-sidebar.html">
                   <div class="img-wrap">
-                    <img src="./img/jeans.svg" alt="jeans" />
+                    <img src="./img/jeans (1).svg" alt="jeans" />
                   </div>
                   <div class="btn-box">
                     <span class="catagories-name"> Jeans </span>
@@ -1157,6 +1178,57 @@
           <hr />
         </div>
       </section>
+      <!-- blog section -->
+      <section class="blog-section">
+        <div class="container">
+          <div class="title-box text-center">
+            <h2 class="unique-heading">From Our Blogs</h2>
+            <span class="title-divider1"
+              ><span class="squre"></span><span class="squre"></span
+            ></span>
+            <p class="my-3">
+              Design your home interior story! Here are the latest trends, tips,
+              and design tricks to help you out.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+               <div class="blog-card">
+                 <div class="blog-img">
+                  <img src="./img/blog-card-1.jpg" alt="">
+                 </div>
+                 <p class="text-muted">March 12, 2020</p>
+                 <h3>What is Shabby Chic?</h3>
+                 <a href="#">Read More</a>
+               </div>
+            </div>
+            <div class="col-lg-4">
+               <div class="blog-card">
+                 <div class="blog-img">
+                  <img src="./img/blog-card-1.jpg" alt="">
+                 </div>
+                 <p class="text-muted">March 12, 2020</p>
+                 <h3>What is Shabby Chic?</h3>
+                 <a href="#">Read More</a>
+               </div>
+            </div>
+            <div class="col-lg-4">
+               <div class="blog-card">
+                 <div class="blog-img">
+                  <img src="./img/blog-card-1.jpg" alt="">
+                 </div>
+                 <p class="text-muted">March 12, 2020</p>
+                 <h3>What is Shabby Chic?</h3>
+                 <a href="#">Read More</a>
+               </div>
+            </div>
+           
+          </div>
+       <div class="text-center my-5">
+        <a href="#" class="btn-solid">READ MORE <i class="arrow"></i></a>
+       </div>
+        </div>
+      </section>
     </main>
     <!-- footer -->
     <footer>
@@ -1173,7 +1245,7 @@
                 you a 20% discount on all our products in 10 minutes.
               </p>
             </div>
-            <div class="col-lg-6 text-end">
+            <div class="col-lg-6 footer-end">
               <input
                 type="email"
                 name=""
@@ -1237,12 +1309,12 @@
       </div>
     </footer>
 
-    <!-- bootstrap 5 js cdn link  -->
-     <script
+    <!-- bootstrap 5 js cdn link -->
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
-    ></script> 
+    ></script>
     <!-- vanila tilt js -->
     <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
     <!-- Swiper JS -->
@@ -1254,18 +1326,18 @@
         speed: 400,
       });
     </script>
-  
+
     <script>
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 10,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
         autoplay: {
           delay: 2500,
           disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
         },
         breakpoints: {
           640: {
@@ -1283,7 +1355,5 @@
         },
       });
     </script>
-
-   
   </body>
 </html>
