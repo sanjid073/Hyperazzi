@@ -2,6 +2,15 @@ function dark() {
   window.location = "index.html";
   document.getElementById("light").style.display = "block";
 }
+function showSetting(){
+  document.getElementById("dashboard-left-content").style.display ="block";
+  document.getElementById("setting-button").style.display ="none";
+
+}
+function closeSetting(){
+  document.getElementById("dashboard-left-content").style.display ="none";
+  document.getElementById("setting-button").style.display ="block";
+}
 function mSize() {
   document.getElementById("M").classList.add("sizeHover");
   document.getElementById("S").classList.remove("sizeHover");
@@ -58,6 +67,9 @@ var x = setInterval(function () {
   }
 }, 1000);
 
+
+
+
 function tavClick(){
   document.getElementById("dashboard-tav1").classList.add('onclick')
   document.getElementById("dashboard-tav2").classList.remove('onclick')
@@ -65,6 +77,8 @@ function tavClick(){
   document.getElementById("dashboard-tav4").classList.remove('onclick')
   document.getElementById("dashboard-tav5").classList.remove('onclick')
   document.getElementById("dashboard-tav6").classList.remove('onclick')
+  document.getElementById("dashboard-content").style.display ="block";
+  document.getElementById("order-content").style.display ="none";
 }
 function tavClick1(){
   document.getElementById("dashboard-tav1").classList.remove('onclick')
@@ -73,6 +87,8 @@ function tavClick1(){
   document.getElementById("dashboard-tav4").classList.remove('onclick')
   document.getElementById("dashboard-tav5").classList.remove('onclick')
   document.getElementById("dashboard-tav6").classList.remove('onclick')
+  document.getElementById("dashboard-content").style.display ="none";
+  document.getElementById("order-content").style.display ="block";
 }
 function tavClick2(){
   document.getElementById("dashboard-tav1").classList.remove('onclick')

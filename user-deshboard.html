@@ -100,19 +100,29 @@
       </nav>
     </header>
 
-    <main>
+    <main class="user-dashboard-main">
       <section class="user-section">
         <div class="container">
           <div class="row">
             <div class="col-lg-3">
-              <div class="deshboard-left">
+              <div id="setting-button">
+                <a onclick="showSetting()" href="#" class="btn-solid"
+                  >Setting Menu <i class="arrow"></i
+                ></a>
+              </div>
+              <div id="dashboard-left-content" class="deshboard-left">
                 <div class="dashboard-profile">
                   <div class="user-pic">
                     <img src="./img/profile-pic (2).png" alt="" />
                   </div>
                   <div class="user-contact">
-                    <h3>Sanjid Haq</h3>
-                    <p>sanjid@devsanjid.com</p>
+                    <div>
+                      <h3>Sanjid Haq</h3>
+                      <p>sanjid@devsanjid.com</p>
+                    </div>
+                    <div id="closeButton" class="ms-5">
+                      <i onclick="closeSetting()" class="fa-solid fa-xmark"></i>
+                    </div>
                   </div>
                 </div>
                 <hr />
@@ -166,8 +176,9 @@
                 </div>
               </div>
             </div>
+
             <div class="col-lg-9">
-              <div class="dashboard-box">
+              <div id="dashboard-content" class="dashboard-box">
                 <div class="dashboard-header">
                   <h3>Welcome Back <b>Sanjid Haq</b></h3>
                   <p>
@@ -212,7 +223,10 @@
                     <div class="dashboard-card">
                       <img src="./img/5.svg" alt="" />
                       <h3>Profile</h3>
-                      <p>Complete your profile details there are some Information missing</p>
+                      <p>
+                        Complete your profile details there are some Information
+                        missing
+                      </p>
                     </div>
                   </div>
                   <div class="col-lg-4">
@@ -220,6 +234,119 @@
                       <img src="./img/6.svg" alt="" />
                       <h3>Security</h3>
                       <p>Please don't share any one your email or password</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="order-content" class="order-content-box">
+                <div class="dashboard-header">
+                  <h3>My Orders</h3>
+                  <p>
+                    H thanks for placing a delivery order with Oslo! Your order
+                    should be home with you in soon
+                  </p>
+                </div>
+                <div class="order-box-outer my-4">
+                  <div class="order-info-title">
+                    <div>
+                      <span
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-box"
+                        >
+                          <path
+                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+                          ></path>
+                          <polyline
+                            points="3.27 6.96 12 12.01 20.73 6.96"
+                          ></polyline>
+                          <line x1="12" y1="22.08" x2="12" y2="12"></line></svg
+                      ></span>
+                    </div>
+                    <div class="ms-2">
+                      <h3>Delivered</h3>
+                      <p>Place July 15 2022 and Delivered on July 18 2022</p>
+                    </div>
+                  </div>
+                  <div class="order-card">
+                    <div class="order-img">
+                      <img src="./img/4.jpg" alt="" />
+                    </div>
+                    <div class="order-text">
+                      <h3>Women’s long sleeve Jacket</h3>
+                      <p class="order-sub-title">
+                        Versatile sporty slogans short sleeve quirky laid back
+                        orange lux hoodies vests pins badges. Versatile sporty
+                        slogans short sleeve quirky laid back orange lux hoodies
+                        vests pins badges. Cutting edge crops stone transparent.
+                      </p>
+                      <p class="order-info-color">
+                        Price : <span>$120.00</span>
+                      </p>
+                      <p class="order-info-color">Size : <span>M</span></p>
+                      <p class="order-info-color">
+                        Order Id : <span>edf125qa1d35</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="order-box-outer my-4">
+                  <div class="order-info-title">
+                    <div>
+                      <span
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-box"
+                        >
+                          <path
+                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+                          ></path>
+                          <polyline
+                            points="3.27 6.96 12 12.01 20.73 6.96"
+                          ></polyline>
+                          <line x1="12" y1="22.08" x2="12" y2="12"></line></svg
+                      ></span>
+                    </div>
+                    <div class="ms-2">
+                      <h3>Delivered</h3>
+                      <p>Place July 15 2022 and Delivered on July 18 2022</p>
+                    </div>
+                  </div>
+                  <div class="order-card">
+                    <div class="order-img">
+                      <img src="./img/4.jpg" alt="" />
+                    </div>
+                    <div class="order-text">
+                      <h3>Women’s long sleeve Jacket</h3>
+                      <p class="order-sub-title">
+                        Versatile sporty slogans short sleeve quirky laid back
+                        orange lux hoodies vests pins badges. Versatile sporty
+                        slogans short sleeve quirky laid back orange lux hoodies
+                        vests pins badges. Cutting edge crops stone transparent.
+                      </p>
+                      <p class="order-info-color">
+                        Price : <span>$120.00</span>
+                      </p>
+                      <p class="order-info-color">Size : <span>M</span></p>
+                      <p class="order-info-color">
+                        Order Id : <span>edf125qa1d35</span>
+                      </p>
                     </div>
                   </div>
                 </div>

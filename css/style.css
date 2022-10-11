@@ -1,7 +1,7 @@
 /* font import link */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat:wght@600;700;800;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;400;500;600;700&display=swap");
 /* flaticon */
 @import url("https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css");
 
@@ -2039,6 +2039,9 @@ img.bg-img {
 }
 
 /* user dashboard section */
+.user-dashboard-main {
+  font-family: "Jost", sans-serif !important;
+}
 .user-section {
   margin-top: 3%;
   padding: 50px 0;
@@ -2063,6 +2066,8 @@ img.bg-img {
 .user-contact {
   margin-left: 20px;
   margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 .user-contact h3 {
   font-weight: 500;
@@ -2077,6 +2082,9 @@ img.bg-img {
   color: rgb(118, 118, 118);
   font-size: 14px;
   margin-bottom: 0;
+}
+.user-contact i{
+
 }
 .dashboard-tav {
   display: flex;
@@ -2099,6 +2107,7 @@ img.bg-img {
   color: rgb(243, 78, 58);
   transition: 0.03s;
 }
+/* dashboard content */
 .dashboard-box {
   padding: 20px;
   background-color: rgb(247, 247, 247);
@@ -2138,6 +2147,111 @@ img.bg-img {
   font-weight: 400;
   color: #767676;
   margin-bottom: 30px;
+}
+
+/* order-content */
+#order-content{
+  display: none;
+}
+.order-content-box {
+  padding: 20px;
+  background-color: rgb(247, 247, 247);
+  border-radius: 5px;
+}
+.order-box-outer {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+.order-info-title {
+  display: flex;
+}
+.order-info-title h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(243, 78, 58);
+  margin-bottom: 0;
+}
+.order-info-title p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #767676;
+  margin-bottom: 0;
+}
+.order-box-outer .order-info-title span {
+  width: calc(35px + (40 - 35) * ((100vw - 320px) / (1920 - 320)));
+  height: calc(35px + (40 - 35) * ((100vw - 320px) / (1920 - 320)));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: relative;
+}
+.order-box-outer .order-info-title span svg {
+  width: calc(20px + (25 - 20) * ((100vw - 320px) / (1920 - 320)));
+  height: calc(20px + (25 - 20) * ((100vw - 320px) / (1920 - 320)));
+  stroke: rgb(243, 78, 58);
+}
+.order-box-outer .order-info-title span::after {
+  content: "";
+  background-color: rgb(243, 78, 58);
+  position: absolute;
+  opacity: 0.08;
+  inset: 0;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+}
+.order-card {
+  display: flex;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #fafafa;
+}
+.order-img {
+  margin-left: 17px;
+}
+.order-img img {
+  width: 110px;
+  height: 140px;
+}
+.order-text{
+  margin-left: 12px;
+}
+.order-text h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #262834;
+  margin-bottom: 3px;
+}
+.order-sub-title {
+  font-size: 13px;
+  color: #767676;
+  line-height: 18px;
+  margin-bottom: 6px;
+  letter-spacing: 0px;
+}
+.order-info-color {
+  color: #767676;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.order-info-color span {
+  color: #262834 !important;
+}
+#setting-button{
+  display: none;
+  margin: 10px 0;
+}
+#closeButton{
+  display: none;
 }
 /* media quirry extra large responsive */
 @media (min-width: 1624px) and (max-width: 4024px) {
@@ -2290,6 +2404,16 @@ img.bg-img {
     display: inline-block !important;
   }
 
+  #dashboard-left-content{
+    display: none;
+  }
+  #setting-button{
+    display: block;
+  }
+  #closeButton{
+    display: block;
+  }
+
   /* product details css */
   .details-header {
     margin-top: 20%;
@@ -2374,6 +2498,7 @@ img.bg-img {
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
+  
   .carousel-text {
     position: absolute;
     top: 35%;
