@@ -58,3 +58,51 @@ var x = setInterval(function () {
   }
 }, 1000);
 
+function tavClick(){
+  document.getElementById("dashboard-tav1").classList.add('onclick')
+  document.getElementById("dashboard-tav2").classList.remove('onclick')
+  document.getElementById("dashboard-tav3").classList.remove('onclick')
+  document.getElementById("dashboard-tav4").classList.remove('onclick')
+  document.getElementById("dashboard-tav5").classList.remove('onclick')
+  document.getElementById("dashboard-tav6").classList.remove('onclick')
+}
+function tavClick1(){
+  document.getElementById("dashboard-tav1").classList.remove('onclick')
+  document.getElementById("dashboard-tav2").classList.add('onclick')
+  document.getElementById("dashboard-tav3").classList.remove('onclick')
+  document.getElementById("dashboard-tav4").classList.remove('onclick')
+  document.getElementById("dashboard-tav5").classList.remove('onclick')
+  document.getElementById("dashboard-tav6").classList.remove('onclick')
+}
+function tavClick2(){
+  document.getElementById("dashboard-tav1").classList.remove('onclick')
+  document.getElementById("dashboard-tav2").classList.remove('onclick')
+  document.getElementById("dashboard-tav3").classList.add('onclick')
+  document.getElementById("dashboard-tav4").classList.remove('onclick')
+  document.getElementById("dashboard-tav5").classList.remove('onclick')
+  document.getElementById("dashboard-tav6").classList.remove('onclick')
+}
+function tavClick3(){
+  document.getElementById("dashboard-tav1").classList.remove('onclick')
+  document.getElementById("dashboard-tav2").classList.remove('onclick')
+  document.getElementById("dashboard-tav3").classList.remove('onclick')
+  document.getElementById("dashboard-tav4").classList.add('onclick')
+  document.getElementById("dashboard-tav5").classList.remove('onclick')
+  document.getElementById("dashboard-tav6").classList.remove('onclick')
+}
+function tavClick4(){
+  document.getElementById("dashboard-tav1").classList.remove('onclick')
+  document.getElementById("dashboard-tav2").classList.remove('onclick')
+  document.getElementById("dashboard-tav3").classList.remove('onclick')
+  document.getElementById("dashboard-tav4").classList.remove('onclick')
+  document.getElementById("dashboard-tav5").classList.add('onclick')
+  document.getElementById("dashboard-tav6").classList.remove('onclick')
+}
+function tavClick5(){
+  document.getElementById("dashboard-tav1").classList.remove('onclick')
+  document.getElementById("dashboard-tav2").classList.remove('onclick')
+  document.getElementById("dashboard-tav3").classList.remove('onclick')
+  document.getElementById("dashboard-tav4").classList.remove('onclick')
+  document.getElementById("dashboard-tav5").classList.remove('onclick')
+  document.getElementById("dashboard-tav6").classList.add('onclick')
+}

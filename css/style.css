@@ -2038,6 +2038,107 @@ img.bg-img {
   width: 100%;
 }
 
+/* user dashboard section */
+.user-section {
+  margin-top: 3%;
+  padding: 50px 0;
+}
+.deshboard-left {
+  /* width: 80%; */
+  padding: 20px;
+  background-color: rgb(247, 247, 247);
+  border-radius: 5px;
+}
+.dashboard-profile {
+  display: flex;
+  /* justify-content: space-around; */
+}
+.user-pic {
+  width: 61px;
+  height: 61px;
+}
+.user-pic img {
+  width: 100%;
+}
+.user-contact {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.user-contact h3 {
+  font-weight: 500;
+  color: rgb(38, 40, 52);
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 3px;
+}
+.user-contact p {
+  line-height: 20px;
+  font-weight: normal;
+  color: rgb(118, 118, 118);
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.dashboard-tav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 17px;
+  padding: 10px;
+}
+.dashboard-tav p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.dashboard-tav i {
+  font-weight: 600;
+}
+.onclick {
+  background-color: rgba(243, 77, 58, 0.266);
+  color: rgb(243, 78, 58);
+  transition: 0.03s;
+}
+.dashboard-box {
+  padding: 20px;
+  background-color: rgb(247, 247, 247);
+  border-radius: 5px;
+}
+.dashboard-box .col-lg-4 {
+  border-bottom: 1px solid #ddd !important;
+  border-right: 1px solid #ddd !important;
+}
+.dashboard-header h3 {
+  font-size: 21px;
+  font-weight: 500;
+  color: #262834;
+}
+.dashboard-header p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #767676;
+}
+.dashboard-card {
+  text-align: center;
+  padding: 10px;
+}
+.dashboard-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.dashboard-card h3 {
+  font-size: 19px;
+  font-weight: 500;
+  color: #262834;
+}
+.dashboard-card p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #767676;
+  margin-bottom: 30px;
+}
 /* media quirry extra large responsive */
 @media (min-width: 1624px) and (max-width: 4024px) {
   .carousel-text {
@@ -2050,7 +2151,7 @@ img.bg-img {
 /* media quirry mobile responsive */
 @media (min-width: 320px) and (max-width: 767px) {
   /* login */
-  
+
   /* header */
   .nav-button {
     color: #fff !important;
