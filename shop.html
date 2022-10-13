@@ -29,81 +29,159 @@
     <title>Shop</title>
   </head>
   <body>
-     <!-- header start -->
-    <header>
-      <nav class="navbar navbar-expand-lg shadow-lg navbar-light fixed-top">
-        <div class="container">
-          <a class="navbar-brand nav-logo" href="#"
-            ><img src="./img/Hyperazzi.png" alt=""
-          /></a>
-          <button
-            class="navbar-toggler nav-button"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="index.html"
-                >
-                  Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="shop.html"
-                  ><i class="fi fi-rr-shop"></i> Shop</a
-                >
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="faq.html">Faq</a>
-              </li>
+   <!-- header start -->
+   <div class="top-header">
+    <div class="container">
+       <div class="top-header-box">
+         <div class="top-header-search">
+          <input type="text" placeholder="Search Products...">
+          <i class="fa-solid fa-magnifying-glass"></i>
+         </div>
+       
+         <div class="top-login-box">
+            <a href="./login.html" class="top-login">Login</a>
+            <a href="./register.html" class="top-login ms-2">Signup</a>
+         </div>
+       </div>
+    </div>
+  </div>
+  
+ 
+    
+ 
+  <header>
+    <nav class="navbar navbar-expand-lg shadow-lg navbar-light ">  
+      <div class="container">
+        <a class="navbar-brand nav-logo" href="#"
+          ><img src="./img/Hyperazzi.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler nav-button"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="index.html"
+              >
+                Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html"
+                ><i class="fi fi-rr-shop"></i> Shop</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Shop by category
+              </a>
+              <div
+                class="drop-down-box dropdown-menu"
+                aria-labelledby="navbarDropdown"
+              >
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="drop-box-2 d-flex align-items-center p-4">
+                      <div class="drop-box-2-img"><img src="./img/jeans.svg" alt="" /></div>
+                      <div class="ms-2">
+                        <h5 class="mb-0">Jeans</h5>
+                        <a href="#">123 Products<span>></span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="drop-box-2 d-flex align-items-center p-4">
+                      <div class="drop-box-2-img"><img src="./img/coat.svg" alt="" /></div>
+                      <div class="ms-2">
+                        <h5 class="mb-0">Coat</h5>
+                        <a href="#">123 Products<span>></span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="drop-box-2 d-flex align-items-center p-4">
+                      <div class="drop-box-2-img"><img src="./img/dress.svg" alt="" /></div>
+                      <div class="ms-2">
+                        <h5 class="mb-0">Dress</h5>
+                        <a href="#">123 Products<span>></span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="drop-box-2 d-flex align-items-center p-4">
+                      <div class="drop-box-2-img"><img src="./img/skirt.svg" alt="" /></div>
+                      <div class="ms-2">
+                        <h5 class="mb-0">Skirt</h5>
+                        <a href="#">123 Products<span>></span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="drop-box-2 d-flex align-items-center p-4">
+                      <div class="drop-box-2-img"><img src="./img/full.svg" alt="" /></div>
+                      <div class="ms-2">
+                        <h5 class="mb-0">Jumpsuits</h5>
+                        <a href="#">123 Products<span>></span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="drop-box-2 d-flex align-items-center p-4">
+                      <div class="drop-box-2-img"><img src="./img/jaket.svg" alt="" /></div>
+                      <div class="ms-2">
+                        <h5 class="mb-0">Hoodies</h5>
+                        <a href="#">123 Products<span>></span></a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                 
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">Faq</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li> -->
-            </ul>
-            <div class="icon-box">
-              <i class="fa-solid fa-heart d-block"></i>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <div class="icon-box">
+            <i class="fa-solid fa-heart d-block"></i>
 
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle icon-box2"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i class="fa-regular fa-user"></i>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a href="./login.html"
-                    ><i class="fa-solid fa-right-to-bracket"></i> Login</a
-                  >
-                  <a href="./register.html"
-                    ><i class="fa-solid fa-user-plus"></i>Register</a
-                  >
-                </ul>
-              </li>
+        
+                <i class="fa-regular fa-user"></i>
+              
+            </li>
 
-              <i
-                onclick="window.location ='./cart.html'"
-                class="fa-solid fa-cart-shopping"
-              ></i>
-            </div>
+            <i
+              onclick="window.location ='./cart.html'"
+              class="fa-solid fa-cart-shopping"
+            ></i>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
     <main>
       <!-- shop start -->
@@ -977,87 +1055,111 @@
           </div>
         </div>
       </section>
-      <!-- footer -->
-      <footer>
-        <div class="container">
-          <div class="footer-up">
-            <div class="row align-items-center">
-              <div class="col-lg-6">
-                <h3>Many desktop publishing</h3>
-                <p>
-                  Do you want to receive exclusive email offers? Subscribe to
-                  our
-                  <br />
-                  newsletter! You will receive a unique promo code which gives
-                  <br />
-                  you a 20% discount on all our products in 10 minutes.
-                </p>
-              </div>
-              <div class="col-lg-6 text-end">
-                <input
-                  type="email"
-                  name=""
-                  placeholder="Enter your email"
-                  id=""
-                />
-                <button class="sub-button">Subscribe</button>
+     <!-- subscription section -->
+     <section class="subscribe-section">
+      <div class="container">
+         <div class="row align-items-center">
+          <div class="col-lg-4">
+            <div class="subscribe-contact ">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h3>Contact US</h3>
+                <p>Get the latest deals, updates & more</p>
               </div>
             </div>
           </div>
-          <hr />
-          <div class="footer-middle">
-            <div class="row">
-              <div class="col-lg-5">
-                <div class="middle-left">
-                  <h3>Flatlogic</h3>
-                  <p>
-                    Lorem Ipsum has been the industry's standard dummy text
-                    <br />
-                    ever since the 1500s,
-                  </p>
-                  <div class="social-icon-footer">
-                    <i class="fa-brands fa-google"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-7">
-                <div class="row middle-right">
-                  <div class="col-lg-4">
-                    <h3>COMPANY</h3>
-                    <a href="#">What We Do</a>
-                    <a href="#">What We Do</a>
-                    <a href="#">What We Do</a>
-                    <a href="#">What We Do</a>
-                  </div>
-                  <div class="col-lg-4">
-                    <h3>COMPANY</h3>
-                    <a href="#">What We Do</a>
-                    <a href="#">What We Do</a>
-                    <a href="#">What We Do</a>
-                    <a href="#">What We Do</a>
-                  </div>
-                  <div class="col-lg-4">
-                    <h3>COMPANY</h3>
-                    <a href="#">What We Do</a>
-                    <a href="#">What We Do</a>
-                    <a href="#">What We Do</a>
-                    <a href="#">What We Do</a>
-                  </div>
-                </div>
-              </div>
+          <div class="col-lg-4">
+            <div class="subscribe-box">
+              <input
+              type="email"
+              name=""
+              placeholder="Enter your email"
+              id=""
+            />
+            <button class="sub-button">Subscribe</button>
             </div>
           </div>
-          <hr />
-          <p class="text-muted mb-0">
-            © 2020-<!-- -->2022<!-- -->
-            powered by
-            <span class="Footer_navigationLink__1OSze">Flatlogic</span>
-          </p>
+          <div class="col-lg-4">
+            <div class="social-icon-subcribe">
+              <p>FOLLOW US</p>
+               <div class="subscribe-icon-box">
+                <i class="fa-brands fa-google"></i>
+               </div>
+               <div class="subscribe-icon-box">
+                <i class="fa-brands fa-twitter"></i>
+               </div>
+               <div class="subscribe-icon-box">
+                <i class="fa-brands fa-linkedin"></i>
+               </div>
+               <div class="subscribe-icon-box">
+                <i class="fa-brands fa-facebook"></i>
+               </div>
+              
+              
+           
+            </div>
+          </div>
+         </div>
+      </div>
+  </section>
+</main>
+<!-- footer -->
+ <footer>
+  <div class="container">
+     <div class="row">
+      <div class="col-lg-6">
+        <div class="footer-link">
+          <h3>COMPANY</h3>
+          <a href="./about.html">About Us</a>
+          <a href="./about.html">Shop</a>
+          <a href="./about.html">Blog</a>
+          <a href="./about.html">Contact Us</a>
         </div>
-      </footer>
+      </div>
+      <div class="col-lg-6">
+        <div class="footer-contact">
+          <h3>CONTACT INFO</h3>
+          <p class="footer-number">+971-0562027668</p>
+          <p class="text-muted-footer">Mon To Sun: 10:00 AM To 6:00 PM</p>
+          <a href="" class="contact-email">sanjid@devsanjid.com</a>
+          <p class="text-muted-footer">Al Awir Road, Dubai, UAE</p>
+        </div>
+      </div>
+     </div>
+     <hr>
+     <p class="footer-copy">Copyright © 2022  HYPERAZZI. All rights reserved</p>
+  </div>
+ </footer>
+
+ <!-- header-bottom -->
+ <div class="header-bottom fixed-bottom">
+  <div class="container">
+    <div class="header-bottom-box">
+      <div class="header-b-item">
+        <i class="fa-solid fa-house"></i>
+        <p>Home</p>
+      </div>
+      <div class="header-b-item">
+        <i class="fa-solid fa-bell"></i>
+        <p>Notification</p>
+      </div>
+      <div class="header-b-item">
+        <i class="fa-solid fa-user"></i>
+        <p>Account</p>
+      </div>
+      <div class="header-b-item">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <p>Cart</p>
+      </div>
+      <div class="header-b-item">
+        <i class="fa-solid fa-inbox"></i>
+        <p>Messages</p>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
     </main>
 
     <!-- bootstrap 5 js cdn link  -->
