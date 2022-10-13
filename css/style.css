@@ -25,9 +25,8 @@ a:hover {
   color: black !important;
 }
 
-
 /* header bottom */
-.header-bottom{
+.header-bottom {
   display: none;
 }
 /* top header */
@@ -63,7 +62,7 @@ a:hover {
   padding: 5px 10px;
   border-radius: 28px;
   font-size: 14px;
-  transition: .3s;
+  transition: 0.3s;
 }
 .top-login:hover {
   border: 1px solid rgb(243, 78, 58);
@@ -1091,7 +1090,6 @@ a:hover {
   color: #a9a9a9;
 }
 
-
 /* blog -section */
 .blog-section {
   padding: 70px 0;
@@ -1860,6 +1858,46 @@ a:hover {
   width: 0px;
 }
 
+/* blog page css ------------------------------------------- */
+.blog-section-main {
+}
+.blog-banner {
+}
+.blog-banner img {
+  max-width: 100%;
+  width: 100%;
+  height: 460px;
+}
+.blog-post {
+}
+.blog-card {
+  width: 50%;
+  margin: auto;
+  text-align: left;
+}
+.blog-header {
+  font-size: 40px !important;
+  line-height: 60px !important;
+  color: #262626 !important;
+}
+.blog-author {
+  display: flex;
+  column-gap: 20px;
+  margin: 20px 0;
+  align-items: center;
+}
+.blog-author img {
+}
+.blog-author p {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: rgb(243, 78, 58) !important;
+  margin-bottom: 0 !important;
+}
+.blog-content {
+}
+.blog-content article {
+}
 /* login page css */
 .page-body {
   width: 100%;
@@ -2297,13 +2335,13 @@ img.bg-img {
   display: none;
 }
 /* subscribe-section */
-.subscribe-section{
+.subscribe-section {
   width: 100%;
   background-color: #222222;
   padding: 50px 0;
   margin-bottom: 20px;
 }
-.subscribe-contact{
+.subscribe-contact {
   display: flex;
   align-items: center;
   color: #fff;
@@ -2312,12 +2350,12 @@ img.bg-img {
   font-size: 45px;
   margin-right: 15px;
 }
-.subscribe-contact h3{
+.subscribe-contact h3 {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 20;
 }
-.subscribe-contact p{
+.subscribe-contact p {
   font-size: 16px;
   font-weight: 400;
   color: #999999;
@@ -2342,7 +2380,7 @@ img.bg-img {
   color: #fff;
   background-color: rgb(243, 78, 58);
 }
-.social-icon-subcribe{
+.social-icon-subcribe {
   display: flex;
   color: #fff;
   row-gap: 10px;
@@ -2359,7 +2397,7 @@ img.bg-img {
   text-align: center;
   border-radius: 25px;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 .subscribe-icon-box:hover {
   background-color: rgb(243, 78, 58);
@@ -2370,36 +2408,36 @@ img.bg-img {
   position: relative;
 }
 
-
 /* #footer */
-footer{
+footer {
   padding: 50px 0 10px 0;
 }
-.footer-link{}
-.footer-link h3{
+.footer-link {
+}
+.footer-link h3 {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 20px;
   color: #000000;
 }
-.footer-link a{
+.footer-link a {
   font-size: 14px;
   font-weight: 400;
   color: #666666;
   display: block;
   margin-bottom: 7px;
 }
-.footer-link a:hover{
+.footer-link a:hover {
   color: rgb(243, 78, 58) !important;
 }
 
-.footer-contact h3{
+.footer-contact h3 {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 20px;
   color: #000000;
- }
- .footer-contact .footer-number {
+}
+.footer-contact .footer-number {
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 7px;
@@ -2412,12 +2450,12 @@ footer{
   margin-bottom: 3px;
   margin-top: 5px;
 }
-.footer-contact .contact-email{
+.footer-contact .contact-email {
   font-size: 14px;
   font-weight: 500;
   color: #000000;
 }
-.footer-copy{
+.footer-copy {
   color: #000000;
   font-weight: 500;
   margin-bottom: 0;
@@ -2434,63 +2472,61 @@ footer{
 }
 /* media quirry mobile responsive */
 @media (min-width: 320px) and (max-width: 767px) {
+  /* top header */
+  .top-header {
+    width: 100%;
+    height: 40px;
+    background: rgba(243, 77, 58, 0.266);
+    padding: 5px 0;
+  }
+  .top-header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .top-header-search input {
+    width: 150px;
+    height: 10px;
+    padding: 15px;
+    border: 1px solid #d1d1d1;
+    border-radius: 47px;
+    outline: none;
+    font-size: 8px;
+  }
+  .top-header-search I {
+    position: relative;
+    right: 30px;
+    font-size: 8px;
+  }
+  .top-login {
+    border: 1px solid transparent;
+    background-color: rgb(243, 78, 58);
+    color: #fff;
+    text-align: center;
+    padding: 4px 13px;
+    border-radius: 34px;
+    font-size: 10px;
+    transition: 0.3s;
+  }
 
-/* top header */
-.top-header {
-  width: 100%;
-  height: 40px;
-  background: rgba(243, 77, 58, 0.266);
-  padding: 5px 0;
-}
-.top-header-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.top-header-search input {
-  width: 150px;
-  height: 10px;
-  padding: 15px;
-  border: 1px solid #d1d1d1;
-  border-radius: 47px;
-  outline: none;
-  font-size: 8px;
-}
-.top-header-search I {
-  position: relative;
-  right: 30px;
-  font-size: 8px;
-}
-.top-login {
-  border: 1px solid transparent;
-  background-color: rgb(243, 78, 58);
-  color: #fff;
-  text-align: center;
-  padding: 4px 13px;
-  border-radius: 34px;
-  font-size: 10px;
-  transition: .3s;
-}
-
-
-.header-bottom{
-  display: block;
-  background-color: #fff !important;
-}
-.header-bottom-box{
-  display: flex;
-  justify-content: space-around;
-}
-.header-b-item {
-  text-align: center;
-  color: #5a5a5a;
-  font-size: 12px;
-  padding: 10px;
-  cursor: pointer;
-}
-.header-b-item p{
-  margin-bottom: 0;
-}
+  .header-bottom {
+    display: block;
+    background-color: #fff !important;
+  }
+  .header-bottom-box {
+    display: flex;
+    justify-content: space-around;
+  }
+  .header-b-item {
+    text-align: center;
+    color: #5a5a5a;
+    font-size: 12px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .header-b-item p {
+    margin-bottom: 0;
+  }
   /* login */
 
   /* header */
@@ -2674,73 +2710,85 @@ footer{
     padding: 10px 0;
   }
 
-/* subscribe-section */
-.subscribe-section{
-  text-align: center;
-}
-.subscribe-contact{
-  color: #fff;
-  display: block;
-  margin-bottom: 10px;
-}
-.subscribe-contact i {
-  font-size: 45px;
-  margin-right: 15px;
-}
-.subscribe-contact h3{
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 20;
-}
-.subscribe-contact p{
-  font-size: 16px;
-  font-weight: 400;
-  color: #999999;
-  margin-bottom: 0;
-}
-.subscribe-box{
-  margin-bottom: 20px;
-}
-.subscribe-box input {
-  width: 200px;
-}
+  /* subscribe-section */
+  .subscribe-section {
+    text-align: center;
+  }
+  .subscribe-contact {
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .subscribe-contact i {
+    font-size: 45px;
+    margin-right: 15px;
+  }
+  .subscribe-contact h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20;
+  }
+  .subscribe-contact p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #999999;
+    margin-bottom: 0;
+  }
+  .subscribe-box {
+    margin-bottom: 20px;
+  }
+  .subscribe-box input {
+    width: 200px;
+  }
 
-.social-icon-subcribe{
-  display: flex;
-  color: #fff;
-  column-gap: 10px;
-  justify-content: center;
+  .social-icon-subcribe {
+    display: flex;
+    color: #fff;
+    column-gap: 10px;
+    justify-content: center;
+  }
+  .social-icon-subcribe p {
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  .subscribe-icon-box {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .subscribe-icon-box:hover {
+    background-color: rgb(243, 78, 58);
+  }
+  .subscribe-icon-box i {
+    line-height: 10px !important;
+    top: 8px !important;
+    position: relative;
+  }
+  .blog-card {
+    width: 100%;
+  }
+  .blog-header {
+    font-size: 20px !important;
+    line-height: 24px !important;
+    color: #262626 !important;
+  }
+  .blog-banner img {
+    max-width: 100%;
+    width: 100%;
+    height: 200px;
 }
-.social-icon-subcribe p {
-  margin-bottom: 0px;
-  margin-top: 10px;
-}
-.subscribe-icon-box {
-  width: 40px;
-  height: 40px;
-  border: 1px solid #ddd;
-  text-align: center;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: .3s;
-}
-.subscribe-icon-box:hover {
-  background-color: rgb(243, 78, 58);
-}
-.subscribe-icon-box i {
-  line-height: 10px !important;
-  top: 8px !important;
-  position: relative;
-}
-
-/* footer */
-footer{
-  padding: 30px 0;
-  text-align: center;
-}  
-.footer-link{
-  margin-bottom: 20px;
-}
+  /* footer */
+  footer {
+    padding: 30px 0;
+    text-align: center;
+  }
+  .footer-link {
+    margin-bottom: 20px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .carousel-text {
@@ -2763,5 +2811,4 @@ footer{
     position: relative;
     margin-bottom: 16px;
   }
- 
 }
